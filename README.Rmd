@@ -1,0 +1,92 @@
+---
+output: github_document
+bibliography: inst/REFERENCES.bib 
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# mmgm
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+Package `mmgm` provides a mixing model that allows to estimate the degree of decomposition ($\gamma$) of a peat sample (mixture) and of its individual components from bulk estimates of $\gamma_\text{MIRS}$ [@Teickner.2025h].
+
+## Installation
+
+You can install the development version of `mmgm` like so:
+
+``` r
+remotes::install_github("henningte/mmgm")
+```
+
+## Example
+
+To estimate the mixing model, one needs to provide a list with two data frames as elements. The first element, `components` contains information on components, and the second element, `mixtures`, contains information on the mixtures (peat samples):
+
+```{r}
+library(mmgm)
+
+# show structure of the example data
+mmgm_example_data
+```
+
+To prepare estimation of the mixing model, this list is processed with `mmgm_make_stan_data()`:
+
+```{r}
+stan_data <- 
+  mmgm_make_stan_data(
+    x = mmgm_example_data, 
+    id_model_gamma_mirs = 2, 
+    priors = mmgm_make_default_priors(x = mmgm_example_data)
+  )
+```
+
+Here, `id_model_gamma_mirs` defines the model that was used to predict $\gamma_\text{MIRS}$ (the number of the model in the `irpeatmodels` package [@Teickner.2025g]). `priors` defines the priors for the mixing model and `mmgm_make_default_priors()` is a helper function that allows to define default priors for a given list of data.
+
+`stan_data` can be passed to `mmgm_estimate_gamma_mirs_mixing_1()` to estimate the mixing model using `CmdStan`. Use the [CmdStan arguments](https://mc-stan.org/cmdstanr/reference/model-method-sample.html) to adjust MCMC sampling:
+
+```{r}
+stan_fit <- 
+  mmgm_estimate_gamma_mirs_mixing_1(
+    stan_data = stan_data,
+    iter_warmup = 1000,
+    iter_sampling = 1000,
+    chains = 4,
+    sig_figs = 14,
+    seed = 7667
+  )
+```
+
+The result is a `CmdStanMCMC` object for which methods from the `cmdstanr` package are available, for example:
+
+```{r}
+stan_fit$diagnostic_summary()
+print(stan_fit$summary(), n = 40)
+```
+
+## Code of Conduct
+  
+  Please note that the mmgm project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/1/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.
+
+# References
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+.Rproj.user
+src/stan/**
+!src/stan/**/*.*
+src/stan/**/*.exe
+src/stan/**/*.EXE
+.Rhistory
+.Rdata
+.httr-oauth
+.DS_Store
+.quarto

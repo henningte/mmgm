@@ -1,0 +1,27 @@
+Package: mmgm
+Title: Estimates the degree of decomposition of peat with a mixing model for \eqn{\gamma_\text{MIRS}}
+Version: 0.0.0.9000
+Authors@R: 
+    person("Henning", "Teickner", , "henning.teickner@uni-muenster.de", role = c("aut", "cre"))
+Description: Provides a mixing model for \eqn{\gamma_\text{MIRS}} bulk estimates 
+    (the degree of decomposition, \eqn{\gamma} estimated from mid infrared 
+    spectra) of peat samples. The mixing model takes \eqn{\gamma_\text{MIRS}} 
+    and the mass fractions of each component of the sample as input and 
+    estimates \eqn{\gamma} of each component and of the entire sample. Batch 
+    processing is possible.
+License: GPL (>= 3)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Depends:
+    R (>= 3.5)
+Imports: 
+    cmdstanr (>= 0.8.1),
+    instantiate (>= 0.2.3.9002),
+    quantities,
+    Rdpack
+LazyData: true
+Suggests: 
+    irpeatmodels (>= 0.0.0.9000),
+    posterior
+RdMacros: Rdpack
