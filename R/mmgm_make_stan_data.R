@@ -39,7 +39,7 @@
 #' mmgm_make_stan_data(
 #'   x = mmgm_example_data,
 #'   id_model_gamma_mirs = 2L,
-#'   priors = mmgm_make_default_priors(x = x)
+#'   priors = mmgm_make_default_priors(x = mmgm_example_data)
 #' )
 #'
 #' @export
@@ -59,6 +59,8 @@ mmgm_make_stan_data <- function(x, id_model_gamma_mirs, priors = mmgm_make_defau
     requireNamespace("quantities", quietly = TRUE)
     x$mixtures[[variable_target_gamma_mirs]] <- units::drop_units(x$mixtures[[variable_target_gamma_mirs]])
   }
+  mmgm_b_Intercept <- NULL
+  utils::data("mmgm_b_Intercept", envir = environment(), package = "mmgm")
 
   x$components <- x$components[order(x$components$id_mixture, x$components$id_component), ]
   x$mixtures <- x$mixtures[order(x$mixtures$id_mixture), ]

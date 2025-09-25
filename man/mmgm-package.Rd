@@ -9,7 +9,7 @@
 Provides a mixing model for \eqn{\gamma_\text{MIRS}} bulk estimates (the degree of decomposition, \eqn{\gamma} estimated from mid infrared spectra) of peat samples. The mixing model takes \eqn{\gamma_\text{MIRS}} and the mass fractions of each component of the sample as input and estimates \eqn{\gamma} of each component and of the entire sample. Batch processing is possible.
 }
 \author{
-\strong{Maintainer}: Henning Teickner \email{henning.teickner@uni-muenster.de}
+\strong{Maintainer}: Henning Teickner \email{henning.teickner@uni-muenster.de} (\href{https://orcid.org/0000-0002-3993-1182}{ORCID})
 
 }
 \keyword{internal}

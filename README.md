@@ -89,9 +89,7 @@ stan_fit <-
   )
 #> Running MCMC with 4 sequential chains...
 #> 
-#> Chain 1 Iteration:    1 / 2000 [  0%]  (Warmup) 
-#> Chain 1 Iteration:  100 / 2000 [  5%]  (Warmup) 
-#> Chain 1 Iteration:  200 / 2000 [ 10%]  (Warmup)
+#> Chain 1 Iteration:    1 / 2000 [  0%]  (Warmup)
 #> Chain 1 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
 #> Chain 1 Exception: gamma_lpdf: Random variable[2] is 0, but must be positive finite! (in 'C:/Users/henni/AppData/Local/Temp/RtmpENUAgT/model-6f82e5cda0.stan', line 43, column 2 to column 40)
 #> Chain 1 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
@@ -102,15 +100,10 @@ stan_fit <-
 #> Chain 1 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
 #> Chain 1 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
 #> Chain 1
+#> Chain 1 Iteration:  100 / 2000 [  5%]  (Warmup) 
+#> Chain 1 Iteration:  200 / 2000 [ 10%]  (Warmup) 
 #> Chain 1 Iteration:  300 / 2000 [ 15%]  (Warmup) 
-#> Chain 1 Iteration:  400 / 2000 [ 20%]  (Warmup) 
-#> Chain 1 Iteration:  500 / 2000 [ 25%]  (Warmup) 
-#> Chain 1 Iteration:  600 / 2000 [ 30%]  (Warmup) 
-#> Chain 1 Iteration:  700 / 2000 [ 35%]  (Warmup) 
-#> Chain 1 Iteration:  800 / 2000 [ 40%]  (Warmup) 
-#> Chain 1 Iteration:  900 / 2000 [ 45%]  (Warmup) 
-#> Chain 1 Iteration: 1000 / 2000 [ 50%]  (Warmup) 
-#> Chain 1 Iteration: 1001 / 2000 [ 50%]  (Sampling)
+#> Chain 1 Iteration:  400 / 2000 [ 20%]  (Warmup)
 #> Chain 1 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
 #> Chain 1 Exception: beta_lpdf: Second shape parameter[5] is 0, but must be positive finite! (in 'C:/Users/henni/AppData/Local/Temp/RtmpENUAgT/model-6f82e5cda0.stan', line 49, column 4 to column 110)
 #> Chain 1 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
@@ -121,6 +114,13 @@ stan_fit <-
 #> Chain 1 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
 #> Chain 1 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
 #> Chain 1
+#> Chain 1 Iteration:  500 / 2000 [ 25%]  (Warmup) 
+#> Chain 1 Iteration:  600 / 2000 [ 30%]  (Warmup) 
+#> Chain 1 Iteration:  700 / 2000 [ 35%]  (Warmup) 
+#> Chain 1 Iteration:  800 / 2000 [ 40%]  (Warmup) 
+#> Chain 1 Iteration:  900 / 2000 [ 45%]  (Warmup) 
+#> Chain 1 Iteration: 1000 / 2000 [ 50%]  (Warmup) 
+#> Chain 1 Iteration: 1001 / 2000 [ 50%]  (Sampling) 
 #> Chain 1 Iteration: 1100 / 2000 [ 55%]  (Sampling) 
 #> Chain 1 Iteration: 1200 / 2000 [ 60%]  (Sampling) 
 #> Chain 1 Iteration: 1300 / 2000 [ 65%]  (Sampling) 
@@ -131,10 +131,8 @@ stan_fit <-
 #> Chain 1 Iteration: 1800 / 2000 [ 90%]  (Sampling) 
 #> Chain 1 Iteration: 1900 / 2000 [ 95%]  (Sampling) 
 #> Chain 1 Iteration: 2000 / 2000 [100%]  (Sampling) 
-#> Chain 1 finished in 0.4 seconds.
-#> Chain 2 Iteration:    1 / 2000 [  0%]  (Warmup) 
-#> Chain 2 Iteration:  100 / 2000 [  5%]  (Warmup) 
-#> Chain 2 Iteration:  200 / 2000 [ 10%]  (Warmup)
+#> Chain 1 finished in 1.0 seconds.
+#> Chain 2 Iteration:    1 / 2000 [  0%]  (Warmup)
 #> Chain 2 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
 #> Chain 2 Exception: beta_lpdf: Second shape parameter[3] is 0, but must be positive finite! (in 'C:/Users/henni/AppData/Local/Temp/RtmpENUAgT/model-6f82e5cda0.stan', line 49, column 4 to column 110)
 #> Chain 2 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
@@ -150,18 +148,20 @@ stan_fit <-
 #> Chain 2 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
 #> Chain 2 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
 #> Chain 2
+#> Chain 2 Iteration:  100 / 2000 [  5%]  (Warmup) 
+#> Chain 2 Iteration:  200 / 2000 [ 10%]  (Warmup) 
 #> Chain 2 Iteration:  300 / 2000 [ 15%]  (Warmup) 
 #> Chain 2 Iteration:  400 / 2000 [ 20%]  (Warmup) 
 #> Chain 2 Iteration:  500 / 2000 [ 25%]  (Warmup) 
 #> Chain 2 Iteration:  600 / 2000 [ 30%]  (Warmup) 
 #> Chain 2 Iteration:  700 / 2000 [ 35%]  (Warmup) 
-#> Chain 2 Iteration:  800 / 2000 [ 40%]  (Warmup) 
-#> Chain 2 Iteration:  900 / 2000 [ 45%]  (Warmup)
+#> Chain 2 Iteration:  800 / 2000 [ 40%]  (Warmup)
 #> Chain 2 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
 #> Chain 2 Exception: beta_lpdf: Second shape parameter[5] is 0, but must be positive finite! (in 'C:/Users/henni/AppData/Local/Temp/RtmpENUAgT/model-6f82e5cda0.stan', line 48, column 4 to column 151)
 #> Chain 2 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
 #> Chain 2 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
 #> Chain 2
+#> Chain 2 Iteration:  900 / 2000 [ 45%]  (Warmup) 
 #> Chain 2 Iteration: 1000 / 2000 [ 50%]  (Warmup) 
 #> Chain 2 Iteration: 1001 / 2000 [ 50%]  (Sampling) 
 #> Chain 2 Iteration: 1100 / 2000 [ 55%]  (Sampling) 
@@ -174,11 +174,10 @@ stan_fit <-
 #> Chain 2 Iteration: 1800 / 2000 [ 90%]  (Sampling) 
 #> Chain 2 Iteration: 1900 / 2000 [ 95%]  (Sampling) 
 #> Chain 2 Iteration: 2000 / 2000 [100%]  (Sampling) 
-#> Chain 2 finished in 0.4 seconds.
+#> Chain 2 finished in 1.0 seconds.
 #> Chain 3 Iteration:    1 / 2000 [  0%]  (Warmup) 
 #> Chain 3 Iteration:  100 / 2000 [  5%]  (Warmup) 
-#> Chain 3 Iteration:  200 / 2000 [ 10%]  (Warmup) 
-#> Chain 3 Iteration:  300 / 2000 [ 15%]  (Warmup)
+#> Chain 3 Iteration:  200 / 2000 [ 10%]  (Warmup)
 #> Chain 3 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
 #> Chain 3 Exception: beta_lpdf: Second shape parameter[2] is 0, but must be positive finite! (in 'C:/Users/henni/AppData/Local/Temp/RtmpENUAgT/model-6f82e5cda0.stan', line 48, column 4 to column 151)
 #> Chain 3 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
@@ -204,6 +203,7 @@ stan_fit <-
 #> Chain 3 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
 #> Chain 3 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
 #> Chain 3
+#> Chain 3 Iteration:  300 / 2000 [ 15%]  (Warmup) 
 #> Chain 3 Iteration:  400 / 2000 [ 20%]  (Warmup) 
 #> Chain 3 Iteration:  500 / 2000 [ 25%]  (Warmup) 
 #> Chain 3 Iteration:  600 / 2000 [ 30%]  (Warmup) 
@@ -222,9 +222,8 @@ stan_fit <-
 #> Chain 3 Iteration: 1800 / 2000 [ 90%]  (Sampling) 
 #> Chain 3 Iteration: 1900 / 2000 [ 95%]  (Sampling) 
 #> Chain 3 Iteration: 2000 / 2000 [100%]  (Sampling) 
-#> Chain 3 finished in 0.4 seconds.
-#> Chain 4 Iteration:    1 / 2000 [  0%]  (Warmup) 
-#> Chain 4 Iteration:  100 / 2000 [  5%]  (Warmup)
+#> Chain 3 finished in 1.1 seconds.
+#> Chain 4 Iteration:    1 / 2000 [  0%]  (Warmup)
 #> Chain 4 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
 #> Chain 4 Exception: beta_lpdf: Second shape parameter[3] is 0, but must be positive finite! (in 'C:/Users/henni/AppData/Local/Temp/RtmpENUAgT/model-6f82e5cda0.stan', line 48, column 4 to column 151)
 #> Chain 4 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
@@ -245,6 +244,7 @@ stan_fit <-
 #> Chain 4 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
 #> Chain 4 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
 #> Chain 4
+#> Chain 4 Iteration:  100 / 2000 [  5%]  (Warmup) 
 #> Chain 4 Iteration:  200 / 2000 [ 10%]  (Warmup) 
 #> Chain 4 Iteration:  300 / 2000 [ 15%]  (Warmup) 
 #> Chain 4 Iteration:  400 / 2000 [ 20%]  (Warmup) 
@@ -255,26 +255,26 @@ stan_fit <-
 #> Chain 4 Iteration:  900 / 2000 [ 45%]  (Warmup) 
 #> Chain 4 Iteration: 1000 / 2000 [ 50%]  (Warmup) 
 #> Chain 4 Iteration: 1001 / 2000 [ 50%]  (Sampling) 
-#> Chain 4 Iteration: 1100 / 2000 [ 55%]  (Sampling) 
-#> Chain 4 Iteration: 1200 / 2000 [ 60%]  (Sampling) 
-#> Chain 4 Iteration: 1300 / 2000 [ 65%]  (Sampling) 
-#> Chain 4 Iteration: 1400 / 2000 [ 70%]  (Sampling) 
-#> Chain 4 Iteration: 1500 / 2000 [ 75%]  (Sampling) 
-#> Chain 4 Iteration: 1600 / 2000 [ 80%]  (Sampling)
+#> Chain 4 Iteration: 1100 / 2000 [ 55%]  (Sampling)
 #> Chain 4 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
 #> Chain 4 Exception: beta_lpdf: Second shape parameter[5] is 0, but must be positive finite! (in 'C:/Users/henni/AppData/Local/Temp/RtmpENUAgT/model-6f82e5cda0.stan', line 49, column 4 to column 110)
 #> Chain 4 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
 #> Chain 4 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
 #> Chain 4
+#> Chain 4 Iteration: 1200 / 2000 [ 60%]  (Sampling) 
+#> Chain 4 Iteration: 1300 / 2000 [ 65%]  (Sampling) 
+#> Chain 4 Iteration: 1400 / 2000 [ 70%]  (Sampling) 
+#> Chain 4 Iteration: 1500 / 2000 [ 75%]  (Sampling) 
+#> Chain 4 Iteration: 1600 / 2000 [ 80%]  (Sampling) 
 #> Chain 4 Iteration: 1700 / 2000 [ 85%]  (Sampling) 
 #> Chain 4 Iteration: 1800 / 2000 [ 90%]  (Sampling) 
 #> Chain 4 Iteration: 1900 / 2000 [ 95%]  (Sampling) 
 #> Chain 4 Iteration: 2000 / 2000 [100%]  (Sampling) 
-#> Chain 4 finished in 0.5 seconds.
+#> Chain 4 finished in 1.2 seconds.
 #> 
 #> All 4 chains finished successfully.
-#> Mean chain execution time: 0.5 seconds.
-#> Total execution time: 2.2 seconds.
+#> Mean chain execution time: 1.1 seconds.
+#> Total execution time: 5.2 seconds.
 ```
 
 The result is a `CmdStanMCMC` object for which methods from the
@@ -348,16 +348,17 @@ entry-spacing="0">
 
 <div id="ref-Teickner.2025g" class="csl-entry">
 
-Teickner, Henning. 2025. “<span class="nocase">irpeatmodels</span>: Mid
-Infrared Prediction Models for Peat.”
+Teickner, Henning. 2025. “<span class="nocase">irpeatmodels</span>:
+<span class="nocase">Mid-infrared</span> Prediction Models for Peat.”
+Zenodo. <https://doi.org/10.5281/ZENODO.17187912>.
 
 </div>
 
 <div id="ref-Teickner.2025h" class="csl-entry">
 
 Teickner, Henning, Julien Arsenault, Mariusz Gałka, and Klaus-Holger
-Knorr. 2025. “Estimation of the Degree of Decomposition and Past Net
-Primary Production of Peat from Mid Infrared Spectra.”
+Knorr. 2025. “Estimation of the Degree of Decomposition of Peat and Past
+Net Primary Production from Mid-Infrared Spectra.”
 
 </div>
 

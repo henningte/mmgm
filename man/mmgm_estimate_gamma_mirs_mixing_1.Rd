@@ -2,14 +2,14 @@
 % Please edit documentation in R/mmgm_estimate_mixing_model.R
 \name{mmgm_estimate_gamma_mirs_mixing_1}
 \alias{mmgm_estimate_gamma_mirs_mixing_1}
-\title{Estimates the mixing model from \insertCite{Teickner.2025f;textual}{mmgm}}
+\title{Estimates the mixing model from \insertCite{Teickner.2025h;textual}{mmgm}}
 \usage{
 mmgm_estimate_gamma_mirs_mixing_1(stan_data, ...)
 }
 \arguments{
 \item{stan_data}{An object as returned by \code{mmgm_make_stan_data()}.}
 
-\item{`...`}{Named arguments to the \code{sample()} method of CmdStan model
+\item{...}{Named arguments to the \code{sample()} method of CmdStan model
 objects: \url{https://mc-stan.org/cmdstanr/reference/model-method-sample.html}}
 }
 \value{
@@ -28,10 +28,13 @@ distribution for \eqn{\gamma_\text{MIRS}} of the mixtures.}
 }
 }
 \description{
-Estimates the mixing model from \insertCite{Teickner.2025f;textual}{mmgm}
+Estimates the mixing model from \insertCite{Teickner.2025h;textual}{mmgm}
 }
 \examples{
 if (instantiate::stan_cmdstan_exists()) {
+
+cmdstanr::check_cmdstan_toolchain(fix = FALSE, quiet = TRUE)
+
 stan_data <-
   mmgm_make_stan_data(
     x = mmgm_example_data,
@@ -42,9 +45,11 @@ stan_data <-
 fit <-
   mmgm_estimate_gamma_mirs_mixing_1(
     stan_data,
-    iter_sampling = 10,
-    iter_warmup = 10,
-    chains = 2
+    iter_sampling = 50,
+    iter_warmup = 30,
+    chains = 2,
+    sig_figs = 14,
+    seed = 7667
   )
 
  fit$summary()

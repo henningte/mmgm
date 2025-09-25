@@ -54,7 +54,7 @@ Prepares the list to use as data input to the mixing model
 mmgm_make_stan_data(
   x = mmgm_example_data,
   id_model_gamma_mirs = 2L,
-  priors = mmgm_make_default_priors(x = x)
+  priors = mmgm_make_default_priors(x = mmgm_example_data)
 )
 
 }
