@@ -174,10 +174,8 @@ stan_fit <-
 #> Chain 2 Iteration: 1800 / 2000 [ 90%]  (Sampling) 
 #> Chain 2 Iteration: 1900 / 2000 [ 95%]  (Sampling) 
 #> Chain 2 Iteration: 2000 / 2000 [100%]  (Sampling) 
-#> Chain 2 finished in 1.0 seconds.
-#> Chain 3 Iteration:    1 / 2000 [  0%]  (Warmup) 
-#> Chain 3 Iteration:  100 / 2000 [  5%]  (Warmup) 
-#> Chain 3 Iteration:  200 / 2000 [ 10%]  (Warmup)
+#> Chain 2 finished in 0.9 seconds.
+#> Chain 3 Iteration:    1 / 2000 [  0%]  (Warmup)
 #> Chain 3 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
 #> Chain 3 Exception: beta_lpdf: Second shape parameter[2] is 0, but must be positive finite! (in 'C:/Users/henni/AppData/Local/Temp/RtmpENUAgT/model-6f82e5cda0.stan', line 48, column 4 to column 151)
 #> Chain 3 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
@@ -203,6 +201,8 @@ stan_fit <-
 #> Chain 3 If this warning occurs sporadically, such as for highly constrained variable types like covariance matrices, then the sampler is fine,
 #> Chain 3 but if this warning occurs often then your model may be either severely ill-conditioned or misspecified.
 #> Chain 3
+#> Chain 3 Iteration:  100 / 2000 [  5%]  (Warmup) 
+#> Chain 3 Iteration:  200 / 2000 [ 10%]  (Warmup) 
 #> Chain 3 Iteration:  300 / 2000 [ 15%]  (Warmup) 
 #> Chain 3 Iteration:  400 / 2000 [ 20%]  (Warmup) 
 #> Chain 3 Iteration:  500 / 2000 [ 25%]  (Warmup) 
@@ -222,7 +222,7 @@ stan_fit <-
 #> Chain 3 Iteration: 1800 / 2000 [ 90%]  (Sampling) 
 #> Chain 3 Iteration: 1900 / 2000 [ 95%]  (Sampling) 
 #> Chain 3 Iteration: 2000 / 2000 [100%]  (Sampling) 
-#> Chain 3 finished in 1.1 seconds.
+#> Chain 3 finished in 1.0 seconds.
 #> Chain 4 Iteration:    1 / 2000 [  0%]  (Warmup)
 #> Chain 4 Informational Message: The current Metropolis proposal is about to be rejected because of the following issue:
 #> Chain 4 Exception: beta_lpdf: Second shape parameter[3] is 0, but must be positive finite! (in 'C:/Users/henni/AppData/Local/Temp/RtmpENUAgT/model-6f82e5cda0.stan', line 48, column 4 to column 151)
@@ -273,8 +273,8 @@ stan_fit <-
 #> Chain 4 finished in 1.2 seconds.
 #> 
 #> All 4 chains finished successfully.
-#> Mean chain execution time: 1.1 seconds.
-#> Total execution time: 5.2 seconds.
+#> Mean chain execution time: 1.0 seconds.
+#> Total execution time: 4.9 seconds.
 ```
 
 The result is a `CmdStanMCMC` object for which methods from the
@@ -340,6 +340,12 @@ Please note that the mmgm project is released with a [Contributor Code
 of
 Conduct](https://contributor-covenant.org/version/2/1/CODE_OF_CONDUCT.html).
 By contributing to this project, you agree to abide by its terms.
+
+## Funding
+
+This study was funded by the Deutsche Forschungsgemeinschaft (DFG,
+German Research Foundation) grant no. KN 929/23-1 to Klaus-Holger Knorr
+and grant no. PE 1632/18-1 to Edzer Pebesma.
 
 # References
 
