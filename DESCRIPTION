@@ -25,12 +25,12 @@ Depends:
     R (>= 3.5)
 Imports: 
     instantiate (>= 0.2.3.9002),
+    cmdstanr (>= 0.8.1),
     Rdpack,
     units,
     errors
 LazyData: true
 Suggests: 
-    cmdstanr (>= 0.8.1),
     irpeat (>= 0.3.0),
     irpeatmodels (>= 0.0.0.9000),
     posterior,

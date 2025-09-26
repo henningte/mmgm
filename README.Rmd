@@ -35,6 +35,7 @@ To estimate the mixing model, one needs to provide a list with two data frames a
 
 ```{r}
 library(mmgm)
+library(cmdstanr)
 
 # show structure of the example data
 mmgm_example_data
