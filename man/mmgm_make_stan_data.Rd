@@ -31,7 +31,9 @@ following columns:
 each mixture, as created with \code{irpeat::irp_degree_of_decomposition_1()},
 \code{irpeat::irp_degree_of_decomposition_2()} or
 \code{irpeat::irp_degree_of_decomposition_3()}. One or more of the columns may
-be present. The columns must be \code{quantities} objects.}
+be present. The columns must be \code{quantities} objects. To create such
+objects, use argument \code{do_summary = TRUE} in \code{irpeat::irp_degree_of_decomposition_1()}
+or one of the other predicition functions.}
 }}
 }}
 
@@ -39,7 +41,7 @@ be present. The columns must be \code{quantities} objects.}
 predictions to use in the mixing model. The corresponding column must be
 present in \code{x}. For example if \code{id_model_gamma_mirs == 1}, then values of
 column \code{degree_of_decomposition_1} in \code{x} will be used to estimate the mixing
-model. See the \code{irpeatmodels} package for details.}
+model.}
 
 \item{priors}{A list specifying prior parameters for the mixing model. See
 \code{mmgm_default_priors} for the structure of this list.}

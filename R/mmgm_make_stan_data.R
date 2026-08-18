@@ -20,7 +20,9 @@
 #'     each mixture, as created with `irpeat::irp_degree_of_decomposition_1()`,
 #'     `irpeat::irp_degree_of_decomposition_2()` or
 #'     `irpeat::irp_degree_of_decomposition_3()`. One or more of the columns may
-#'     be present. The columns must be `quantities` objects.}
+#'     be present. The columns must be `quantities` objects. To create such
+#'     objects, use argument `do_summary = TRUE` in `irpeat::irp_degree_of_decomposition_1()`
+#'     or one of the other predicition functions.}
 #'   }}
 #' }
 #'
@@ -28,7 +30,7 @@
 #' predictions to use in the mixing model. The corresponding column must be
 #' present in `x`. For example if `id_model_gamma_mirs == 1`, then values of
 #' column `degree_of_decomposition_1` in `x` will be used to estimate the mixing
-#' model. See the `irpeatmodels` package for details.
+#' model.
 #'
 #' @param priors A list specifying prior parameters for the mixing model. See
 #' `mmgm_default_priors` for the structure of this list.

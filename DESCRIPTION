@@ -20,7 +20,7 @@ Description: Provides a mixing model for \eqn{\gamma_\text{MIRS}} bulk estimates
 License: GPL (>= 3)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2
+RoxygenNote: 7.3.3
 Depends:
     R (>= 3.5)
 Imports: 
@@ -36,3 +36,11 @@ Suggests:
     posterior,
     quantities
 RdMacros: Rdpack
+Remotes: 
+    stan-dev/cmdstanr,
+    wlandau/instantiate,
+    henningte/mmgm
+Additional_repositories:
+    https://github.com/stan-dev/cmdstanr/,
+    https://github.com/wlandau/instantiate,
+    https://github.com/henningte/mmgm/

@@ -11,14 +11,14 @@
 #' the following parameters:
 #' \describe{
 #'   \item{`gamma_component`}{The degree of decomposition (\eqn{\gamma}) of each
-#'   component.}
+#'   component (the fraction of the initial mass remaining in g g\eqn{^{-1}}).}
 #'   \item{`gamma_mixture`}{\eqn{\gamma} of each mixture.}
 #'   \item{`gamma_mirs_mixture_obs`}{Average \eqn{\gamma_\text{MIRS}} of the
 #'   mixtures.}
 #'   \item{`phi`}{A scaled version of the scale parameter of the beta
 #'   distribution for \eqn{\gamma_\text{MIRS}} of the mixtures.}
 #'   \item{`b_intercept`}{Intercept of the linear model that predicts
-#'   \eqn{\gamma_\text{MIRS}} from mid infrared spectra.}
+#'   \eqn{\gamma_\text{MIRS}} from mid-infrared spectra.}
 #' }
 #'
 #' @references

@@ -17,14 +17,14 @@ A \code{CmdStanMCMC} object with the estimated mixing model. The model has
 the following parameters:
 \describe{
 \item{\code{gamma_component}}{The degree of decomposition (\eqn{\gamma}) of each
-component.}
+component (the fraction of the initial mass remaining in g g\eqn{^{-1}}).}
 \item{\code{gamma_mixture}}{\eqn{\gamma} of each mixture.}
 \item{\code{gamma_mirs_mixture_obs}}{Average \eqn{\gamma_\text{MIRS}} of the
 mixtures.}
 \item{\code{phi}}{A scaled version of the scale parameter of the beta
 distribution for \eqn{\gamma_\text{MIRS}} of the mixtures.}
 \item{\code{b_intercept}}{Intercept of the linear model that predicts
-\eqn{\gamma_\text{MIRS}} from mid infrared spectra.}
+\eqn{\gamma_\text{MIRS}} from mid-infrared spectra.}
 }
 }
 \description{

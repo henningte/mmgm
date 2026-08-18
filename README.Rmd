@@ -31,9 +31,9 @@ remotes::install_github("henningte/mmgm")
 
 ## Example
 
-To estimate the mixing model, one needs to provide a list with two data frames as elements. The first element, `components` contains information on components, and the second element, `mixtures`, contains information on the mixtures (peat samples):
+To estimate the mixing model, one needs to provide a list with two data frames as elements. The first element, `components`, contains information on components, and the second element, `mixtures`, contains information on the mixtures (peat samples). The structure of this list is described in detail in the documentation for `mmgm_make_stan_data()` (`?mmgm_make_stan_data`). Here, we use the example data from `mmgm`, `mmgm_example_data`:
 
-```{r}
+```{r, message=FALSE, warning=FALSE}
 library(mmgm)
 library(cmdstanr)
 
@@ -60,8 +60,8 @@ Here, `id_model_gamma_mirs` defines the model that was used to predict $\gamma_\
 stan_fit <- 
   mmgm_estimate_gamma_mirs_mixing_1(
     stan_data = stan_data,
-    iter_warmup = 1000,
-    iter_sampling = 1000,
+    iter_warmup = 2000,
+    iter_sampling = 2000,
     chains = 4,
     sig_figs = 14,
     seed = 7667
